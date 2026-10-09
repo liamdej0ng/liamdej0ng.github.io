@@ -1,5 +1,11 @@
 body { font-size: 18px; }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: -10px 0 20px;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -206,6 +212,10 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    nav ul {
+        flex-direction: column;
+    }
 }
 
 #foto4 {
@@ -274,4 +284,13 @@ iframe {
     height: 300px;
     border: 0;
     border-radius: 12px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: left;
+    width: 67%;
+    margin-top: -250px;
 }
