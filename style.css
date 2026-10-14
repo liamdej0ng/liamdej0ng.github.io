@@ -294,3 +294,19 @@ table, th, td {
     width: 67%;
     margin-top: -250px;
 }
+@media (max-width: 768px) {
+    table, th, td {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+@media (max-width: 600px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .index-layout {
+        grid-template-columns: 1fr;
+    }
+}
