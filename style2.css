@@ -8,7 +8,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #f2f2f2;
+    background-color: #fff;
     border: 2px solid #333;
 }
 nav ul {
@@ -80,7 +80,7 @@ main {
 }
 
 footer {
-    background-color: #f2f2f2;
+    background-color: #fff;
     border-top: 2px solid #333;
     padding: 15px 20px;
     margin-top: auto;
@@ -95,7 +95,7 @@ footer {
     margin-right: auto;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #f2f2f2;
+    background-color: #fff;
 }
 footer p{ 
     height: 20px;
