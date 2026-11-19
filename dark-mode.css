@@ -1,5 +1,7 @@
-body {
-    background-color: #fff;
+html,
+html body,
+html body * {
+    background-color: #fff !important;
 }
 
 html.dark-mode,
