@@ -1,0 +1,88 @@
+html.dark-mode body {
+    color: #e8e8e8;
+    background-color: #121212;
+}
+
+html.dark-mode nav,
+html.dark-mode footer,
+html.dark-mode .contact-details,
+html.dark-mode .hobby-item {
+    color: #e8e8e8;
+    background-color: #1e1e1e;
+}
+
+html.dark-mode nav {
+    border-color: #555;
+}
+
+html.dark-mode nav a {
+    color: #e8e8e8;
+}
+
+html.dark-mode nav a:hover {
+    color: #fff;
+    background-color: #b31319;
+}
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode .hobby-tekst h2 {
+    color: #f0f0f0;
+}
+
+html.dark-mode a {
+    color: #8ab4f8;
+}
+
+html.dark-mode nav a,
+html.dark-mode .theme-toggle {
+    color: #e8e8e8;
+}
+
+html.dark-mode #projecten,
+html.dark-mode #project3,
+html.dark-mode #project4,
+html.dark-mode #p1,
+html.dark-mode #p3,
+html.dark-mode #p4,
+html.dark-mode .portfolio-foto,
+html.dark-mode .project-foto,
+html.dark-mode #foto5,
+html.dark-mode table,
+html.dark-mode th,
+html.dark-mode td,
+html.dark-mode .contact-details {
+    border-color: #555;
+}
+
+html.dark-mode input,
+html.dark-mode textarea,
+html.dark-mode .contact-buttons button {
+    color: #e8e8e8;
+    background-color: #252525;
+    border: 1px solid #666;
+}
+
+.theme-toggle {
+    padding: 10px 14px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    color: #333;
+    background-color: transparent;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    background-color: #ddd;
+}
+
+.theme-toggle:focus-visible {
+    outline: 3px solid #d71a1a;
+    outline-offset: 2px;
+}
+
+html.dark-mode .theme-toggle:hover {
+    background-color: #444;
+}
