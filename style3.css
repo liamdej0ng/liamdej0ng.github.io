@@ -2,7 +2,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #f2f2f2;
+    background-color: #fff;
     border: 2px solid #333;
 }
 
@@ -57,7 +57,7 @@ nav a:hover {
 body {
     margin: 0;
     color: #333;
-    background-color: #f7f7f7;
+    background-color: #fff;
     font-family: Arial, sans-serif;
 }
 
@@ -110,7 +110,7 @@ h1 {
 footer {
     margin-top: 40px;
     padding: 15px 20px;
-    background-color: #f2f2f2;
+    background-color: #fff;
     border-top: 2px solid #333;
     text-align: center;
 }
