@@ -1,0 +1,19 @@
+body {
+    background-color: #fff;
+}
+
+html.dark-mode,
+html.dark-mode body,
+html.dark-mode body * {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.theme-toggle {
+    padding: 10px 14px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
