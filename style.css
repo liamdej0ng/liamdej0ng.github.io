@@ -1,5 +1,8 @@
 body { font-size: 18px; }
-
+color {
+    color: #ffffff;
+}
+    
 table {
     width: 100%;
     border-collapse: collapse;
@@ -10,7 +13,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #f2f2f2;
+    background-color: #fff;
     border: 2px solid #333;
 }
 
@@ -191,7 +194,7 @@ footer {
     margin-top: 40px;
     padding: 20px;
     border-top: 2px solid #333;
-    background-color: #f2f2f2;
+    background-color: #fff;
 }
 .footer-copyright {
     flex: 0 1 auto;
@@ -266,7 +269,7 @@ footer {
     align-self: start;
     padding: 20px;
     border-left: 3px solid #d71a1a;
-    background-color: #f2f2f2;
+    background-color: #fff;
 }
 .contact-details p {
     width: auto;
