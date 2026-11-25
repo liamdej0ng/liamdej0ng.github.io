@@ -91,31 +91,6 @@ p {
     border-radius: 12px;
     border: 2px solid #333;
 }
-@media (max-width: 768px) {
-    .intro-layout {
-        flex-direction: column;
-        min-height: 0;
-    }
-    .portfolio-foto {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-    }
-    .project-foto {
-        width: 100%;
-        max-width: 200px;
-    }
-    .project-fotos {
-        flex-direction: column;
-    }
-    #project3 {
-        width: calc(100% - 40px);
-    }
-
-    .project-secties {
-        flex-direction: column;
-    }
-}
 .project-secties {
     display: flex;
     align-items: stretch;
@@ -210,17 +185,6 @@ footer {
 .footer-contact a {
     color: #333;
 }
-@media (max-width: 600px) {
-    footer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-}
-
 #foto4 {
     width: 200px;
     height: auto;
@@ -297,19 +261,42 @@ table, th, td {
     width: 67%;
     margin-top: -250px;
 }
+
+/* Op een telefoon (scherm 768px of kleiner) */
 @media (max-width: 768px) {
-    table, th, td {
-        width: 100%;
-        margin-top: 0;
+
+    /* Tekst mag zo hoog worden als nodig en niet breder dan het scherm */
+    p {
+        height: auto;
+        width: auto;
     }
-}
-@media (max-width: 600px) {
+
+    /* Home: tekst en foto onder elkaar */
+    .intro-layout {
+        flex-direction: column;
+    }
+
+    /* Home: foto niet breder dan het scherm */
+    #foto1 {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Home: de drie blokken onder elkaar */
+    .project-secties {
+        flex-direction: column;
+    }
+    #projecten, #project3, #project4 {
+        width: 100%;
+    }
+
+    /* Contact: formulier en gegevens onder elkaar */
     .contact-layout {
         grid-template-columns: 1fr;
     }
-}
-@media (max-width: 768px) {
-    .index-layout {
-        grid-template-columns: 1fr;
+
+    /* Footer: dingen onder elkaar */
+    footer {
+        flex-direction: column;
     }
 }

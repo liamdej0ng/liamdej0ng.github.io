@@ -13,6 +13,7 @@ themeToggle.addEventListener("click", () => {
     const isDarkMode = !document.documentElement.classList.contains("dark-mode");
     setTheme(isDarkMode);
     localStorage.setItem(themePreferenceKey, isDarkMode ? "dark" : "light");
+    console.log("De gebruiker heeft op de dark mode knop geklikt.");
 });
 
 function getGreeting(hour) {
@@ -42,48 +43,26 @@ if (cookieConsent === null) {
     sessionStorage.setItem(cookieConsentKey, cookieConsent);
 }
 
-// ===== Console logs =====
-
-// Cookie-keuze loggen
+// Cookie-keuze in de console zetten
 if (cookieConsent === "accepted") {
     console.log("De gebruiker heeft de cookie popup geaccepteerd.");
 } else {
     console.log("De gebruiker heeft de cookies geweigerd.");
 }
 
-// Welke pagina is geladen
-console.log("Pagina geladen: " + document.title);
-
-// Hoveren over een plaatje
-const afbeeldingen = document.querySelectorAll("img");
-afbeeldingen.forEach((afbeelding) => {
-    afbeelding.addEventListener("mouseenter", () => {
-        console.log("De gebruiker hovert over het plaatje: " + afbeelding.alt);
-    });
-});
-
-// Klikken op een link in het menu
-const menuLinks = document.querySelectorAll("nav a");
-menuLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-        console.log("De gebruiker klikt op de menulink naar: " + link.getAttribute("href"));
-    });
-});
-
-// Dark mode aan/uit
-themeToggle.addEventListener("click", () => {
-    const isDarkMode = document.documentElement.classList.contains("dark-mode");
-    console.log("De gebruiker heeft de " + (isDarkMode ? "donkere" : "lichte") + " modus aangezet.");
-});
-
-// Contactformulier (alleen op de contactpagina)
-const contactFormulier = document.getElementById("contactformulier");
-if (contactFormulier !== null) {
-    contactFormulier.addEventListener("submit", (event) => {
-        event.preventDefault();
-        console.log("De gebruiker heeft het contactformulier verstuurd.");
-    });
-    contactFormulier.addEventListener("reset", () => {
-        console.log("De gebruiker heeft het contactformulier gereset.");
+// Bij elk plaatje: als je er met de muis overheen gaat, komt er een bericht in de console
+const plaatjes = document.querySelectorAll("img");
+for (const plaatje of plaatjes) {
+    plaatje.addEventListener("mouseenter", () => {
+        console.log("De gebruiker hovert over het plaatje: " + plaatje.alt);
     });
 }
+
+// Hamburgermenu: klik op de knop = class "open" op de <nav> aan of uit
+const menuKnop = document.getElementById("menu-knop");
+const navbar = document.querySelector("nav");
+
+menuKnop.addEventListener("click", () => {
+    navbar.classList.toggle("open");
+    console.log("De gebruiker heeft op de menuknop geklikt.");
+});

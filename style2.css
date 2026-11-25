@@ -97,7 +97,22 @@ footer {
     line-height: 1.5;
     background-color: #fff;
 }
-footer p{ 
+footer p{
     height: 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+}
+
+/* Op een telefoon (scherm 768px of kleiner) */
+@media (max-width: 768px) {
+
+    /* Tabel: kleinere tekst zodat hij past */
+    th,
+    td {
+        font-size: 15px;
+    }
+
+    /* Footer-tekst mag op twee regels */
+    footer p {
+        height: auto;
+    }
 }

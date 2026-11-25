@@ -115,9 +115,12 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 600px) {
+/* Op een telefoon (scherm 768px of kleiner) */
+@media (max-width: 768px) {
+
+    /* Hobby's onder elkaar */
     .hobby {
         grid-template-columns: 1fr;
     }
-} 
+}
 

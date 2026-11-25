@@ -1,0 +1,28 @@
+/* Hamburgermenu voor alle pagina's */
+
+/* Op de computer: menuknop verbergen */
+.menu-knop {
+    display: none;
+}
+
+/* Op een telefoon (scherm 768px of kleiner) */
+@media (max-width: 768px) {
+
+    /* Menuknop laten zien */
+    .menu-knop {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        font-size: 20px;
+    }
+
+    /* Links verbergen */
+    nav ul {
+        display: none;
+    }
+
+    /* Als het menu open is: links onder elkaar laten zien */
+    nav.open ul {
+        display: block;
+    }
+}
