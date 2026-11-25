@@ -2,11 +2,39 @@ html,
 html body,
 html body * {
     background-color: #fff !important;
+    color: #000 !important;
 }
 
 html.dark-mode,
 html.dark-mode body,
 html.dark-mode body * {
     background-color: #000 !important;
+    color: #fff !important;
+}
+
+html body .theme-toggle-container {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+html body .theme-toggle {
+    padding: 14px 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #f0f0f0 !important;
+    color: #000 !important;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+html.dark-mode body .theme-toggle {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+html body .theme-toggle:hover {
+    background-color: #f01313 !important;
     color: #fff !important;
 }
