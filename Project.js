@@ -1,16 +1,12 @@
-const button = document.querySelector(".theme-toggle");
-const key = "portfolio-theme";
+document.documentElement.classList.add("dark-mode");
 
-function setDarkMode(dark) {
-    document.documentElement.classList.toggle("dark-mode", dark);
-    button.textContent = dark ? "☀️ Lichtmodus" : "🌙 Dark mode";
-    button.setAttribute("aria-pressed", String(dark));
+const cookieConsentKey = "cookie-consent-v2";
+let cookieConsent = localStorage.getItem(cookieConsentKey);
+
+if (cookieConsent === null) {
+    cookieConsent = window.confirm(
+        "Deze website gebruikt cookies op alle pagina's. " +
+        "Wil je cookies toestaan? Kies OK om toe te staan of Annuleren om te weigeren."
+    ) ? "accepted" : "denied";
+    localStorage.setItem(cookieConsentKey, cookieConsent);
 }
-
-setDarkMode(localStorage.getItem(key) === "dark");
-
-button.addEventListener("click", () => {
-    const dark = !document.documentElement.classList.contains("dark-mode");
-    localStorage.setItem(key, dark ? "dark" : "light");
-    setDarkMode(dark);
-});
